@@ -1,14 +1,13 @@
 # ============================================================
 # MOVIE RECOMMENDATION SYSTEM — app.py
 # Built with: Python, Pandas, Scikit-learn, Streamlit
-# Algorithm: K-Nearest Neighbors (KNN) with Cosine Similarity
+# Algorithm: K-Nearest Neighbors (KNN) 
 # Dataset: MovieLens Small
 # ============================================================
 
 import streamlit as st
 import pandas as pd
 from sklearn.neighbors import NearestNeighbors
-from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import os
 
@@ -100,7 +99,7 @@ def build_model(movies, ratings):
     represented by a vector of user ratings. Movies with similar
     rating patterns are likely to be similar in taste.
 
-    KNN + Cosine Similarity:
+    KNN :
     ------------------------
     KNN finds the K movies whose rating vectors are most similar
     to a given movie. We use Cosine Similarity as the distance
@@ -236,7 +235,7 @@ Not Liked           FP              TN
 def main():
     # ── Header ──────────────────────────────
     st.title("🎬 Movie Recommendation System")
-    st.markdown("##### Powered by KNN + Cosine Similarity | MovieLens Dataset")
+    st.markdown("##### Powered by KNN | MovieLens Dataset")
     st.markdown("---")
 
     # ── Load Data ───────────────────────────
