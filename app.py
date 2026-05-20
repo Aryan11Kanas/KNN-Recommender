@@ -9,7 +9,6 @@ import streamlit as st
 import pandas as pd
 from sklearn.neighbors import NearestNeighbors
 import numpy as np
-import os
 
 # ─────────────────────────────────────────────
 # PAGE CONFIG — must be the FIRST Streamlit call
