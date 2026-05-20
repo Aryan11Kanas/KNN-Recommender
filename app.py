@@ -1,10 +1,3 @@
-# ============================================================
-# MOVIE RECOMMENDATION SYSTEM — app.py
-# Built with: Python, Pandas, Scikit-learn, Streamlit
-# Algorithm: K-Nearest Neighbors (KNN) 
-# Dataset: MovieLens Small
-# ============================================================
-
 import streamlit as st
 import pandas as pd
 from sklearn.neighbors import NearestNeighbors
